@@ -1,0 +1,563 @@
+  1. fix the bugs:
+
+CODE :
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    guvi
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+OUTPUT : 
+guvi
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Guvi Geek Network
+
+
+
+  2.fix the bugs :
+
+CODE :
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    guvi
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <div>
+            <div>
+                Guvi Geek Network
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+OUTPUT :
+
+guvi
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+Guvi Geek Network
+
+
+
+
+
+  3. Design a contact us form with all fields as required.
+
+CODE :
+
+
+  <!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <!-- Full Name -->
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Phone -->
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" 
+               placeholder="10-digit number" required><br><br>
+
+        <!-- Subject -->
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+        <!-- Submit -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+
+
+
+  4. Use certain HTML elements to display the following in a HTML page.
+
+CODE :
+
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Languages and Databases</title>
+</head>
+<body>
+  <h2> HTML page</h2>
+
+  <ul>
+    <li>Programming Language
+      <ul>
+        <li>JavaScript
+          <ol type="a">
+            <li>Angular</li>
+            <li>React</li>
+            <li>Vue.js</li>
+          </ol>
+        </li>
+        <li>Python
+          <ol type="a">
+            <li>Django Framework</li>
+            <li>Flask Framework</li>
+          </ol>
+        </li>
+        <li>Java
+          <ol type="a">
+            <li>Spring</li>
+            <li>Maven</li>
+            <li>Hibernate</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+
+    <li>Database
+      <ul>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>Cassandra</li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
+
+
+
+
+  5. Create an element that helps you to open the https://google.com in separate new tab.
+
+CODE :
+<html>
+<head>
+<title> GOOGLE SITE</title>
+</head>
+<body>
+
+<a href="https://google.com" target="_blank" style="padding:8px 15px; background:#4285F4; color:white; text-decoration:none; border-radius:5px;">
+  Open Google
+</a>
+
+</body>
+</html>
+
+
+
+
+  6. In the form, add two radio buttons with grouping them for employee type(Salaried and own business)
+
+CODE :
+
+<html>
+<head>
+<title> employee information </title>
+</head>
+<body>
+
+<h3> Employee Details </h3>
+
+<form>
+  <!-- Other form fields -->
+
+  <label>Employee Type:</label><br>
+  
+  <input type="radio" id="salaried" name="employeeType" value="Salaried">
+  <label for="salaried">Salaried</label><br>
+  
+  <input type="radio" id="ownBusiness" name="employeeType" value="Own Business">
+  <label for="ownBusiness">Own Business</label><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+
+
+
+  9. Write HTML input tags snippet to show default values for all Form elements.
+
+CODE:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form with Default Values</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      max-width: 500px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background: #f9f9f9;
+    }
+    label {
+      display: inline-block;
+      width: 140px;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      margin-bottom: 12px;
+      padding: 5px;
+      width: 60%;
+    }
+    textarea {
+      width: 95%;
+      height: 80px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .buttons {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form Elements with Default Values</h2>
+  <form>
+    <!-- Text Input -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" value="SHACKOO">
+    </div>
+
+    <!-- Password -->
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" value="646567">
+    </div>
+
+    <!-- Number -->
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" value="23" min="1" max="100">
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="koki123@gmail.com">
+    </div>
+
+    <!-- Date -->
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" value="2004-07-22">
+    </div>
+
+    <!-- Color -->
+    <div class="form-group">
+      <label for="favcolor">Favorite Color:</label>
+      <input type="color" id="favcolor" value="#ff2340">
+    </div>
+
+    <!-- Range -->
+    <div class="form-group">
+      <label for="volume">Volume:</label>
+      <input type="range" id="volume" min="0" max="100" value="70">
+    </div>
+
+    <!-- Radio Buttons -->
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" checked> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <!-- Checkbox -->
+    <div class="form-group">
+      <label>Options:</label>
+      <input type="checkbox" checked> Subscribe
+      <input type="checkbox"> Notify Me
+    </div>
+
+    <!-- Select Dropdown -->
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country">
+        <option>USA</option>
+        <option selected>India</option>
+        <option>UK</option>
+      </select>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label for="comments">Comments:</label><br>
+      <textarea id="comments">This is the default text in textarea...</textarea>
+    </div>
+
+    <!-- File -->
+    <div class="form-group">
+      <label for="resume">Resume:</label>
+      <input type="file" id="resume">
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+</body>
+</html>
+
+
+
+
+     10. In your, HTML page add the below line and Highlight it without using any CSS.
+    "HTML & CSS is awesome"
+
+CODE :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Highlight Example</title>
+</head>
+<body>
+  <h3>10. In your HTML page add the below line and Highlight it without using any CSS.</h3>
+  <ul>
+    <li><mark>"HTML &amp; CSS is awesome"</mark></li>
+  </ul>
+</body>
+</html>
+
+
+
+
+   11. Create an HTML page, which should contain all types of input elements.
+
+CODE :
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>All HTML Form Elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: inline-block;
+      width: 180px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      width: 60%;
+      height: 80px;
+    }
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input[type="submit"], input[type="reset"], input[type="button"] {
+      width: auto;
+      padding: 8px 16px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      color: white;
+    }
+    input[type="submit"] { background: #4CAF50; }
+    input[type="reset"] { background: #f44336; }
+    input[type="button"] { background: #2196F3; }
+  </style>
+</head>
+<body>
+
+  <h1>All HTML Form Controls</h1>
+
+  <form>
+    <!-- Basic Inputs -->
+    <div class="form-group">
+      <label for="text">Text:</label>
+      <input type="text" id="text" value="SHACKOO">
+    </div>
+
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" value="765489">
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="koki432@example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="num">Number:</label>
+      <input type="number" id="num" value="25" min="1" max="100">
+    </div>
+
+    <div class="form-group">
+      <label for="url">Website:</label>
+      <input type="url" id="url" value="https://example.com">
+    </div>
+
+    <div class="form-group">
+      <label for="tel">Phone:</label>
+      <input type="tel" id="tel" value="+91-8300075188">
+    </div>
+
+    <div class="form-group">
+      <label for="search">Search:</label>
+      <input type="search" id="search" value="HTML Input Types">
+    </div>
+
+    <!-- Date & Time -->
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" value="2025-08-23">
+    </div>
+
+    <div class="form-group">
+      <label for="time">Time:</label>
+      <input type="time" id="time" value="12:30">
+    </div>
+
+    <div class="form-group">
+      <label for="month">Month:</label>
+      <input type="month" id="month" value="2025-08">
+    </div>
+
+    <div class="form-group">
+      <label for="week">Week:</label>
+      <input type="week" id="week" value="2025-W34">
+    </div>
+
+    <!-- Pickers -->
+    <div class="form-group">
+      <label for="color">Color:</label>
+      <input type="color" id="color" value="#ff0000">
+    </div>
+
+    <div class="form-group">
+      <label for="range">Range:</label>
+      <input type="range" id="range" min="0" max="100" value="70">
+    </div>
+
+    <!-- Choice Inputs -->
+    <div class="form-group">
+      <label>Gender:</label>
+      <input type="radio" name="gender" value="Male" checked> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </div>
+
+    <div class="form-group">
+      <label>Hobbies:</label>
+      <input type="checkbox" checked> Reading
+      <input type="checkbox"> Music
+      <input type="checkbox"> Sports
+    </div>
+
+    <!-- Select Dropdown -->
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country">
+        <option>USA</option>
+        <option selected>India</option>
+        <option>UK</option>
+      </select>
+    </div>
+
+    <!-- Textarea -->
+    <div class="form-group">
+      <label for="comments">Comments:</label>
+      <textarea id="comments">This is default text inside textarea.</textarea>
+    </div>
+
+    <!-- File Upload -->
+    <div class="form-group">
+      <label for="file">Upload File:</label>
+      <input type="file" id="file">
+    </div>
+
+    <!-- Hidden Input -->
+    <div class="form-group">
+      <input type="hidden" name="userid" value="12345">
+    </div>
+
+    <!-- Special Inputs -->
+    <div class="form-group">
+      <label>Image Button:</label>
+      <input type="image" src="https://via.placeholder.com/50" alt="Submit">
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <input type="button" value="Click Me">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </div>
+  </form>
+
+</body>
+</html>
+
+
+
+
